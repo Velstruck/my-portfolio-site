@@ -7,15 +7,23 @@ import {
   HoverCardTrigger,
 } from "./ui/hover-card"
 
-const IconLink = ({ href, icon: Icon, label }) => {
+const IconLink = ({ href, icon: Icon, label, onClick, target }) => {
+  const handleClick = (e) => {
+    if (onClick) {
+      e.preventDefault()
+      onClick()
+    }
+  }
+
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
         <a
           href={href}
-          target="_blank"
           rel="noopener noreferrer"
+          target={target}
           className="p-2 hover:text-primary transition-colors"
+          onClick={handleClick}
         >
           <Icon size={20} />
         </a>
@@ -33,7 +41,10 @@ const FloatingDock = ({ theme, setTheme }) => {
   }
 
   const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   return (
@@ -55,16 +66,19 @@ const FloatingDock = ({ theme, setTheme }) => {
         href="https://github.com/Velstruck"
         icon={Github}
         label="GitHub"
+        target="_blank"
       />
       <IconLink
         href="https://linkedin.com/in/vasudev7"
         icon={Linkedin}
         label="LinkedIn"
+        target="_blank"
       />
       <IconLink
         href="https://x.com/velstruck"
         icon={Twitter}
         label="Twitter"
+        target="_blank"
       />
       <Separator orientation="vertical" className="h-6" />
       <Toggle

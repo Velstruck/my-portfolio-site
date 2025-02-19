@@ -12,7 +12,7 @@ function Main() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <main className="container mx-auto">
+      <main className="container mx-auto space-y-8 md:space-y-8 pb-16">
         <Hero />
         <Experience />
         <Education />

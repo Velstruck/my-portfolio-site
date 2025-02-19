@@ -3,8 +3,8 @@ import profileimage from "/profilepic.png"
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-between px-4 md:px-8 lg:px-16 py-20">
-      <div className="flex-1">
+    <section className="min-h-[80vh] flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 lg:px-16 py-8 md:py-10 gap-8">
+      <div className="flex-1 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
           Hi, I am Vasudev 🫸
         </h1>
@@ -20,8 +20,8 @@ const Hero = () => {
           </a>
         </Button>
       </div>
-      <div className="hidden md:block">
-        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-primary">
+      <div className="w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64">
+        <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary">
           <img
             src={profileimage}
             alt="Vasudev"
