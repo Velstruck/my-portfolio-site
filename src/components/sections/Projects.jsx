@@ -53,14 +53,14 @@ const Projects = () => {
     {
       title: "CrowdFunding Platform: Using Web3",
       description: "This project aims to create a secure and user-friendly crowdfunding platform leveraging the power of Web3 and blockchain technology.",
-      image: "src/assets/crowdfunding.png",
+      image: "/crowdfunding.png",
       techStack: ["NextJS", "Tailwind", "Solidity", "Hardhat", "React", "NodeJS", "Blockchain"],
       repoLink: "https://github.com/Velstruck/crowdfunding-web3-app",
     },
     {
       title: "Story Forge",
       description: "A blogging platform allowing users to create and read blogs",
-      image: "src/assets/storyforge.png",
+      image: "/storyforge.png",
       techStack: ["React","Redux","Tailwind", "Node.js", "Appwrite","TinyMCE"],
       repoLink: "https://github.com/Velstruck/story-forge",
       liveLink: "https://story-forge.netlify.app/"
@@ -68,7 +68,7 @@ const Projects = () => {
     {
       title: "Event Manager App",
       description: "This is an Event Management Application that allows users to create, manage, and participate in events. The application provides a user-friendly interface to handle all event-related activities",
-      image: "src/assets/eventmanager.png",
+      image: "/eventmanager.png",
       techStack: ["React","Tailwind", "Node.js", "Firebase"],
       repoLink: "https://github.com/Velstruck/event-manager-app",
       liveLink: "https://manage-event-app.vercel.app"
@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "GameUrge: Discover Games",
       description: "A modern, interactive game search application that lets users discover and explore video games using the IGDB API. Features a beautiful UI with gaming-themed animations and real-time search capabilities.",
-      image: "src/assets/gameurge.png",
+      image: "/gameurge.png",
       techStack: ["React", "Framer-Motion", "Tailwind","Node.js", "IGDB API"],
       repoLink: "https://github.com/Velstruck/game-urge-app",
       liveLink: "https://gameurge.vercel.app/"
@@ -84,7 +84,7 @@ const Projects = () => {
     {
       title: "MovieUrge: Discover Movies",
       description: "This project is a movie database application built using React. It allows users to search for movies, view movie details, and see trending movies. The application leverages several technologies and APIs to provide a rich user experience.",
-      image: "src/assets/movieurge.png",
+      image: "/movieurge.png",
       techStack: ["React", "Tailwind","Node.js", "TMDB API","Appwrite"],
       repoLink: "https://github.com/Velstruck/movie-db-app",
       liveLink: "https://gameurge.vercel.app/"
@@ -92,7 +92,7 @@ const Projects = () => {
     {
       title: "Celebrity Predictor",
       description: "This project, utilizing the VGGFace model, exemplifies the cutting-edge application of image processing and deep learning in the entertainment industry and highlights the potential of AI in face recognition, paving the way for future innovations in image analysis and the entertainment sector.",
-      image: "src/assets/celebrity.png",
+      image: "/celebrity.png",
       techStack: ["Python", "MySQL","TensorFlow", "Scikit-learn","OpenCV","Streamlit","Keras","MTCNN"],
       repoLink: "https://github.com/Velstruck/ol-celeb",
     },

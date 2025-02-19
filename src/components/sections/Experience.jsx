@@ -18,7 +18,7 @@ const ExperienceItem = ({ logo, company, role, duration }) => {
 const Experience = () => {
   const experiences = [
     {
-      logo: 'src/assets/companyimage.jpeg',
+      logo: '/companyimage.jpeg',
       company: "CognifyZ Technologies",
       role: "Web Developer Intern",
       duration: "Jun 2024 - Jul 2024"

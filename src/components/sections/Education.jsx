@@ -1,4 +1,4 @@
-const EducationItem = ({ logo, institution, degree, cgpa, duration }) => {
+const EducationItem = ({ logo, institution, degree, cgpa, duration, percentage }) => {
   return (
     <div className="flex items-start gap-4 mb-8">
       <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border border-primary">
@@ -7,7 +7,9 @@ const EducationItem = ({ logo, institution, degree, cgpa, duration }) => {
       <div className="flex-1">
         <h3 className="text-xl font-semibold">{institution}</h3>
         <p className="text-muted-foreground">{degree}</p>
-        <p className="text-sm text-muted-foreground">CGPA: {cgpa}</p>
+        {/* if percentage show it if cgpa show it */}
+        {percentage && <p className="text-sm text-muted-foreground">Percentage: {percentage}</p>}
+        {cgpa && <p className="text-sm text-muted-foreground">CGPA: {cgpa}</p>}
       </div>
       <div className="text-sm text-muted-foreground">{duration}</div>
     </div>
@@ -17,11 +19,18 @@ const EducationItem = ({ logo, institution, degree, cgpa, duration }) => {
 const Education = () => {
   const education = [
     {
-      logo: "src/assets/collegeimage.jpg",
+      logo: "/collegeimage.jpg",
       institution: "Dr. Ambedkar Institue of Technology",
       degree: "B.E. in Computer Science and Engineering",
       cgpa: "8.73",
       duration: "Nov 2021 - Aug 2025"
+    },
+    {
+      logo: "/schoollogo.png",
+      institution: "DAV Public School",
+      degree: "CBSE Class XII",
+      percentage: "89.8%",
+      duration: "July 2021"
     }
   ]
 

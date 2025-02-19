@@ -1,5 +1,5 @@
 import { Button } from "../ui/button"
-import profileimage from "../../assets/profilepic.png"  
+import profileimage from "/profilepic.png"  
 
 const Hero = () => {
   return (

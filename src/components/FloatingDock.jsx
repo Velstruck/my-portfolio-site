@@ -52,17 +52,17 @@ const FloatingDock = ({ theme, setTheme }) => {
       />
       <Separator orientation="vertical" className="h-6" />
       <IconLink
-        href="https://github.com/yourusername"
+        href="https://github.com/Velstruck"
         icon={Github}
         label="GitHub"
       />
       <IconLink
-        href="https://linkedin.com/in/yourusername"
+        href="https://linkedin.com/in/vasudev7"
         icon={Linkedin}
         label="LinkedIn"
       />
       <IconLink
-        href="https://twitter.com/yourusername"
+        href="https://x.com/velstruck"
         icon={Twitter}
         label="Twitter"
       />
