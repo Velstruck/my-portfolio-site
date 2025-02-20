@@ -87,7 +87,7 @@ const Projects = () => {
       image: "/movieurge.png",
       techStack: ["React", "Tailwind","Node.js", "TMDB API","Appwrite"],
       repoLink: "https://github.com/Velstruck/movie-db-app",
-      liveLink: "https://gameurge.vercel.app/"
+      liveLink: "https://movieurge.netlify.app/"
     },
     {
       title: "Celebrity Predictor",
