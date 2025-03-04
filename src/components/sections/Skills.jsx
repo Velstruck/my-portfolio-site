@@ -23,14 +23,14 @@ const Skills = () => {
   ]
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16">
+    <section className="px-4 md:px-8 lg:px-16">
       <h2 className="text-3xl font-bold mb-8">Skills</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
           <Badge
             key={index}
             variant="secondary"
-            className="text-sm py-1 px-3 hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="text-sm py-1 px-3 hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer"
           >
             {skill}
           </Badge>

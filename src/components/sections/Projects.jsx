@@ -51,19 +51,19 @@ const ProjectCard = ({ title, description, image, techStack, repoLink, liveLink 
 const Projects = () => {
   const projects = [
     {
+      title: "VBLOG: A Blogging Platform",
+      description: "A Blogging Platform that allows users to create, read, comment and like blogs. Users can search thorugh their favourite categories of blogs. There are Admin priveleges for managing the platform as well.",
+      image: "/mernblog.png",
+      techStack: ["React", "Tailwind", "Shadcn UI", "MongoDB", "Firebase", "NodeJS", "Express"],
+      repoLink: "https://github.com/Velstruck/mern-blog-app",
+      liveLink: "https://mern-blog-app-lvln.vercel.app"
+    },
+    {
       title: "CrowdFunding Platform: Using Web3",
       description: "This project aims to create a secure and user-friendly crowdfunding platform leveraging the power of Web3 and blockchain technology.",
       image: "/crowdfunding.png",
       techStack: ["NextJS", "Tailwind", "Solidity", "Hardhat", "React", "NodeJS", "Blockchain"],
       repoLink: "https://github.com/Velstruck/crowdfunding-web3-app",
-    },
-    {
-      title: "Story Forge",
-      description: "A blogging platform allowing users to create and read blogs",
-      image: "/storyforge.png",
-      techStack: ["React","Redux","Tailwind", "Node.js", "Appwrite","TinyMCE"],
-      repoLink: "https://github.com/Velstruck/story-forge",
-      liveLink: "https://story-forge.netlify.app/"
     },
     {
       title: "Event Manager App",
@@ -72,6 +72,14 @@ const Projects = () => {
       techStack: ["React","Tailwind", "Node.js", "Firebase"],
       repoLink: "https://github.com/Velstruck/event-manager-app",
       liveLink: "https://manage-event-app.vercel.app"
+    },
+    {
+      title: "Story Forge",
+      description: "A blogging platform allowing users to create and read blogs",
+      image: "/storyforge.png",
+      techStack: ["React","Redux","Tailwind", "Node.js", "Appwrite","TinyMCE"],
+      repoLink: "https://github.com/Velstruck/story-forge",
+      liveLink: "https://story-forge.netlify.app"
     },
     {
       title: "GameUrge: Discover Games",

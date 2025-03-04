@@ -26,7 +26,7 @@ const Experience = () => {
   ]
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16">
+    <section className="px-8 md:px-8 lg:px-16">
       <h2 className="text-3xl font-bold mb-8">Work Experience</h2>
       <div>
         {experiences.map((exp, index) => (

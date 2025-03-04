@@ -1,4 +1,5 @@
 import { Button } from "../ui/button"
+import { RainbowButton } from "../ui/rainbow-button"
 import profileimage from "/profilepic.png"  
 
 const Hero = () => {
@@ -14,11 +15,11 @@ const Hero = () => {
             A passionate software developer focused on creating intuitive and efficient web applications.          
           </p>
         </p>
-        <Button asChild variant="outline" className="hover:bg-primary hover:text-primary-foreground">
-          <a href="https://drive.google.com/file/d/1lHHFGNfU3hhYqwIlQ2rB2jXnnUjjjMjo/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <RainbowButton className="text-sm hover:scale-105 transition-all duration-300">
+          <a href="https://drive.google.com/file/d/1t3StA1KYg1AryIekZmiIjiqhxWA4S50e/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             View Resume
           </a>
-        </Button>
+        </RainbowButton>
       </div>
       <div className="w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64">
         <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary">
