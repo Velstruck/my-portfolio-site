@@ -37,11 +37,9 @@ function Main() {
               <Contact />
             </FadeIn>
           </main>
-          <FadeIn delay={0.7}>
-            <FloatingDock theme={theme} setTheme={setTheme} />
-          </FadeIn>
         </FadeInStagger>
-      </div>
+          <FloatingDock theme={theme} setTheme={setTheme} />
+        </div>
     </BeamsBackground>
   )
 }

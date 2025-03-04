@@ -1,6 +1,7 @@
 import { Home, Mail, Github, Linkedin, Twitter, Sun, Moon } from "lucide-react"
 import { Separator } from "./ui/separator"
 import { Toggle } from "./ui/toggle"
+import { motion } from "framer-motion"
 import {
   HoverCard,
   HoverCardContent,
@@ -46,9 +47,18 @@ const FloatingDock = ({ theme, setTheme }) => {
       contactSection.scrollIntoView({ behavior: "smooth" })
     }
   }
-
+  
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur-sm border rounded-full px-4 py-2 flex items-center gap-2 shadow-lg">
+    <motion.div 
+      className="fixed bottom-6 inset-x-0 mx-auto flex justify-center w-max bg-background/80 backdrop-blur-sm border rounded-full px-4 py-2 items-center gap-2 shadow-lg"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.8,
+        ease: "easeOut",
+      }}
+    >
       <IconLink
         href="#"
         icon={Home}
@@ -88,7 +98,7 @@ const FloatingDock = ({ theme, setTheme }) => {
       >
         {theme === "dark" ? <Moon size={20} /> : <Sun size={20} />}
       </Toggle>
-    </div>
+    </motion.div>
   )
 }
 
