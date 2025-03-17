@@ -7,6 +7,17 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "./ui/hover-card"
+import unsplash from "../assets/unsplash.svg"
+
+const UnsplashIcon = ({ size = 20, theme }) => (
+  <div style={{ width: size, height: size }}>
+    <img 
+      src={unsplash} 
+      alt="Unsplash" 
+      className={`w-full h-full ${theme === "dark" ? "invert" : ""}`} 
+    />
+  </div>
+)
 
 const IconLink = ({ href, icon: Icon, label, onClick, target }) => {
   const handleClick = (e) => {
@@ -88,6 +99,12 @@ const FloatingDock = ({ theme, setTheme }) => {
         href="https://x.com/velstruck"
         icon={Twitter}
         label="Twitter"
+        target="_blank"
+      />
+      <IconLink
+        href="https://unsplash.com/velstruck"
+        icon={(props) => <UnsplashIcon {...props} theme={theme} />}
+        label="Unsplash"
         target="_blank"
       />
       <Separator orientation="vertical" className="h-6" />
