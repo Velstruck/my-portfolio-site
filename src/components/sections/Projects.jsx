@@ -52,11 +52,19 @@ const Projects = () => {
   const projects = [
     {
       title: "VBLOG: A Blogging Platform",
-      description: "A Blogging Platform that allows users to create, read, comment and like blogs. Users can search thorugh their favourite categories of blogs. There are Admin priveleges for managing the platform as well.",
+      description: "A Blogging Platform that allows users to create, read, comment and like blogs. Users can search for their favourite categories of blogs. There are Admin privileges for managing the platform as well.",
       image: "/mernblog.png",
       techStack: ["React", "Tailwind", "Shadcn UI", "MongoDB", "Firebase", "NodeJS", "Express"],
       repoLink: "https://github.com/Velstruck/mern-blog-app",
       liveLink: "https://mern-blog-app-lvln.vercel.app"
+    },
+    {
+      title: "Stock Talk: Real-Time Stock Market Analytics",
+      description: "This project is a real-time stock market analytics application that provides users with up-to-date information on stock prices, trends, and news. It utilizes the Alpha Vantage API to fetch stock data and presents it in an intuitive and user-friendly interface.",
+      image: "/stocktalk.png",
+      techStack: ["React", "Tailwind", "Shadcn UI", "MongoDB", "Alpha Vantage", "NodeJS", "Express"],
+      repoLink: "https://github.com/Velstruck/stock-talk",
+      liveLink: "https://stock-talk-web.vercel.app"
     },
     {
       title: "CrowdFunding Platform: Using Web3",
