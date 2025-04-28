@@ -51,12 +51,28 @@ const ProjectCard = ({ title, description, image, techStack, repoLink, liveLink 
 const Projects = () => {
   const projects = [
     {
+      title: "TeamSync: A Team and Project Management App ",
+      description: " A multi-tenancy platform with features like Google Sign-In, workspace management, project management, task CRUD, role-based permissions, invite system, filters, search, analytics, pagination, cookie session management, and more.",
+      image: "/underconstruction.png",
+      techStack: ["React", "Typescript","Tailwind", "Shadcn UI","Tanstack/React Query","Nuqs","Zustand","Axios", "MongoDB", "NodeJS", "Express", "Google OAUTH"],
+      repoLink: "https://github.com/Velstruck/teamsync-app",
+      
+    },
+    {
       title: "VBLOG: A Blogging Platform",
       description: "A Blogging Platform that allows users to create, read, comment and like blogs. Users can search for their favourite categories of blogs. There are Admin privileges for managing the platform as well.",
       image: "/mernblog.png",
-      techStack: ["React", "Tailwind", "Shadcn UI", "MongoDB", "Firebase", "NodeJS", "Express"],
+      techStack: ["React", "Tailwind", "Shadcn UI", "MongoDB", "Firebase", "NodeJS", "Express", "Cloudinary"],
       repoLink: "https://github.com/Velstruck/mern-blog-app",
       liveLink: "https://mern-blog-app-lvln.vercel.app"
+    },
+    {
+      title: "Insight Income: An Expense Tracker",
+      description: "​Insight Income is a web-based application designed to provide users with a comprehensive analysis of their income data. It offers interactive visualizations and insights to help users understand their income patterns and make informed financial decisions",
+      image: "/insightincome.png",
+      techStack: ["React", "Tailwind", "ReCharts", "MongoDB", "NodeJS", "Express","xlsx", "Cloudinary"],
+      repoLink: "https://github.com/Velstruck/insight-income",
+      liveLink: "https://insight-income.vercel.app"
     },
     {
       title: "Stock Talk: Real-Time Stock Market Analytics",
@@ -126,6 +142,9 @@ const Projects = () => {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
+      <p className="mt-10 text-muted-foreground mb-8">
+        For more checkout:<span> <a href="https://github.com/Velstruck" target="_blank" className="text-primary hover:underline">Github</a></span>
+      </p>
     </section>
   )
 }
