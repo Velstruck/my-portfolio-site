@@ -18,6 +18,12 @@ const ExperienceItem = ({ logo, company, role, duration }) => {
 const Experience = () => {
   const experiences = [
     {
+      logo: '/optigrit_logo.png',
+      company: "OptiGrit",
+      role: "Frontend Developer Intern",
+      duration: "May 2025 - Present"
+    },
+    {
       logo: '/companyimage.jpeg',
       company: "CognifyZ Technologies",
       role: "Web Developer Intern",

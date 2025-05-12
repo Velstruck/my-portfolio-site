@@ -2,14 +2,15 @@ import { Badge } from "../ui/badge"
 
 const Skills = () => {
   const skills = [
-    "HTML5",
-    "CSS3",
+    "HTML",
+    "CSS",
     "JavaScript",
     "TailwindCSS",
     "ReactJS",
     "Redux",
     "Node.js",
     "Express.js",
+    "Material UI",
     "ShadCN UI",
     "MongoDB",
     "Appwrite",
@@ -19,7 +20,7 @@ const Skills = () => {
     "Git/GitHub",
     "REST APIs",
     "Data Structures",
-    "Algorithms",
+    "OOPS",
   ]
 
   return (
