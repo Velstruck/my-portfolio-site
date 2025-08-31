@@ -26,7 +26,7 @@ const Hero = () => {
             />
         </p>
         <RainbowButton className="text-sm hover:scale-105 transition-all duration-300">
-          <a href="https://drive.google.com/file/d/1Xylwv3NDhDSMlnIJbIeY7PiDYuBvI2kw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/14jo0XCU2S0FvQ0jT29j9Q4HzlWt2BgAL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             View Resume
           </a>
         </RainbowButton>
