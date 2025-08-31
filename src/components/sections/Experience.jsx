@@ -18,10 +18,15 @@ const ExperienceItem = ({ logo, company, role, duration }) => {
 const Experience = () => {
   const experiences = [
     {
+      logo: '/Deloitte_logo.png',
+      company: "Deloitte USI",
+      role: "Analyst - AI & Data",
+      duration: "Aug 2025 - Present"
+    },{
       logo: '/optigrit_logo.png',
       company: "OptiGrit",
       role: "Frontend Developer Intern",
-      duration: "May 2025 - Present"
+      duration: "May 2025 - Aug 2025"
     },
     {
       logo: '/companyimage.jpeg',
